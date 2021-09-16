@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header ul {
+  list-style-type: none;
+}
+Header ul a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
