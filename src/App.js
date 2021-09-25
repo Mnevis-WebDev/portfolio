@@ -1,6 +1,7 @@
+import Switch from 'react-bootstrap/esm/Switch'
 import Particles from 'react-particles-js'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import './App.css'
+
 import Header from './components/Header'
 import Home from './screens/Home'
 import Projects from './screens/Projects'
@@ -20,9 +21,10 @@ function App() {
           }}
         >
           <Header />
-
-          <Route path='/' exact component={Home}></Route>
-          <Route path='/Projects' component={Projects}></Route>
+          <Switch>
+            <Route path='/' exact component={Home}></Route>
+            <Route path='/Projects' component={Projects}></Route>
+          </Switch>
         </div>
       </div>
     </Router>

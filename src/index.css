@@ -1,7 +1,18 @@
-#particle-canvas {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.welcomeScreen {
+  opacity: 0.65;
+  font-size: 4rem;
+  width: '60rem';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeScreen a {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  color: yellow;
+  font-size: 2rem;
 }
