@@ -25,19 +25,23 @@ const Projects = () => {
           <ProjectCard
             title={'La bataille des genres'}
             src={'/img/project2.png'}
-            alt={'image project 1'}
-            description={
-              'React project that fetch data item from the fortnite API.'
-            }
+            alt={'image project 2'}
+            description={'Quiz like to learn the gender of the noun in French'}
             linkCode={' https://github.com/Mnevis-WebDev/LaBatailleDesGenres'}
-            link={'https://github.com/Mnevis-WebDev/LaBatailleDesGenres'}
+            link={'https://mnevis-webdev.github.io/LaBatailleDesGenres/'}
           />
         </Col>
         <Col sm={12} md={6} lg={4} xl={3}>
-          <ProjectCard></ProjectCard>
-        </Col>
-        <Col sm={12} md={6} lg={4} xl={3}>
-          <ProjectCard></ProjectCard>
+          <ProjectCard
+            title={'Language Lab'}
+            src={'/img/project3.png'}
+            alt={'image project 3'}
+            description={
+              'Commercial project on React. Language lab that enhance the capabilities of the learner.'
+            }
+            linkCode={''}
+            link={''}
+          />
         </Col>
       </Row>
     </Container>
