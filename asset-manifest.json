@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Mnevis-WebDev/portfolio/static/css/main.a6534a72.chunk.css",
-    "main.js": "/Mnevis-WebDev/portfolio/static/js/main.93a7dc44.chunk.js",
-    "main.js.map": "/Mnevis-WebDev/portfolio/static/js/main.93a7dc44.chunk.js.map",
+    "main.js": "/Mnevis-WebDev/portfolio/static/js/main.4e924461.chunk.js",
+    "main.js.map": "/Mnevis-WebDev/portfolio/static/js/main.4e924461.chunk.js.map",
     "runtime-main.js": "/Mnevis-WebDev/portfolio/static/js/runtime-main.ff809f21.js",
     "runtime-main.js.map": "/Mnevis-WebDev/portfolio/static/js/runtime-main.ff809f21.js.map",
-    "static/js/2.cbbb2447.chunk.js": "/Mnevis-WebDev/portfolio/static/js/2.cbbb2447.chunk.js",
-    "static/js/2.cbbb2447.chunk.js.map": "/Mnevis-WebDev/portfolio/static/js/2.cbbb2447.chunk.js.map",
+    "static/js/2.5e3f2293.chunk.js": "/Mnevis-WebDev/portfolio/static/js/2.5e3f2293.chunk.js",
+    "static/js/2.5e3f2293.chunk.js.map": "/Mnevis-WebDev/portfolio/static/js/2.5e3f2293.chunk.js.map",
     "index.html": "/Mnevis-WebDev/portfolio/index.html",
     "static/css/main.a6534a72.chunk.css.map": "/Mnevis-WebDev/portfolio/static/css/main.a6534a72.chunk.css.map",
-    "static/js/2.cbbb2447.chunk.js.LICENSE.txt": "/Mnevis-WebDev/portfolio/static/js/2.cbbb2447.chunk.js.LICENSE.txt"
+    "static/js/2.5e3f2293.chunk.js.LICENSE.txt": "/Mnevis-WebDev/portfolio/static/js/2.5e3f2293.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ff809f21.js",
-    "static/js/2.cbbb2447.chunk.js",
+    "static/js/2.5e3f2293.chunk.js",
     "static/css/main.a6534a72.chunk.css",
-    "static/js/main.93a7dc44.chunk.js"
+    "static/js/main.4e924461.chunk.js"
   ]
 }
