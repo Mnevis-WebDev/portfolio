@@ -24,7 +24,7 @@ const Projects = () => {
         <Col sm={12} md={6} lg={4} xl={3}>
           <ProjectCard
             title={'La bataille des genres'}
-            src={'/img/project1.png'}
+            src={'/img/project2.png'}
             alt={'image project 1'}
             description={
               'React project that fetch data item from the fortnite API.'
