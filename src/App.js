@@ -8,26 +8,24 @@ import Projects from './screens/Projects'
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        <Particles className='particles' />
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        >
-          <Header />
-          <Switch>
-            <Route path='/' exact component={Home}></Route>
-            <Route path='/Projects' component={Projects}></Route>
-          </Switch>
-        </div>
+    <div className='App'>
+      <Particles className='particles' />
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        <Header />
+        <Switch>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/Projects' component={Projects}></Route>
+        </Switch>
       </div>
-    </Router>
+    </div>
   )
 }
 
