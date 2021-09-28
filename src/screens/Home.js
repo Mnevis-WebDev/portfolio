@@ -12,15 +12,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 const Home = () => {
   return (
-    <Container
-      className='welcomeScreen my-5'
-      style={{
-        width: '60rem',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
+    <Container className='welcomeScreen my-5'>
       <Card>
         <Card.Body>
           <Card.Title>
