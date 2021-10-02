@@ -13,12 +13,12 @@ import { LinkContainer } from 'react-router-bootstrap'
 const Home = () => {
   return (
     <Container className='welcomeScreen my-5'>
-      <Card>
+      <Card id='welcomeCard'>
         <Card.Body>
           <Card.Title>
             Hi, you can call me <span id='name'> Mnevis</span>
           </Card.Title>
-          <Card.Text>I'm a front-end web developper</Card.Text>
+          <Card.Text>I'm a Front-end web developper</Card.Text>
           <Container className='text-center'>
             <Button variant='outline-primary'>
               <LinkContainer to='/Projects'>

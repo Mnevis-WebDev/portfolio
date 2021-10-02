@@ -4,7 +4,10 @@ import { Card, Button, Container } from 'react-bootstrap'
 const ProjectCard = (props) => {
   return (
     <Container>
-      <Card style={{ width: '18rem' }} className='card text-white bg-dark mb-3'>
+      <Card
+        style={{ width: '18rem' }}
+        className='card text-white bg-dark mb-3 mx-auto'
+      >
         <Container>
           <Card.Img
             className={'my-3'}
@@ -16,10 +19,10 @@ const ProjectCard = (props) => {
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>{props.description}</Card.Text>
             <Container className='btn-toolbar '>
-              <Button variant='outline-primary'>
+              <Button variant='outline-primary' disabled={props.disabled}>
                 <a href={props.linkCode}>View</a>
               </Button>
-              <Button variant='outline-primary'>
+              <Button variant='outline-primary' disabled={props.disabled}>
                 <a href={props.link}>GitHub</a>
               </Button>
             </Container>

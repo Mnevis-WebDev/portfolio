@@ -5,10 +5,10 @@ import { LinkContainer } from 'react-router-bootstrap'
 const About = () => {
   return (
     <Container className='about my-5'>
-      <Card>
+      <Card id='aboutCard'>
         <Card.Body>
           <Card.Title>
-            How I became a <span id='name'> front-end web developper</span>
+            How I became a <span id='name'> Front-end web developper</span> ?
           </Card.Title>
           <Card.Text>
             To make a long story short I became a web developper after following
