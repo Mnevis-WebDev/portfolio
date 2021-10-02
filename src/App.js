@@ -11,7 +11,7 @@ import Resume from './screens/Resume'
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className='App'>
         <Particles
           params={{
@@ -47,7 +47,7 @@ function App() {
           </Switch>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   )
 }
 

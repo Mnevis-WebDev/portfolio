@@ -18,7 +18,7 @@ const Home = () => {
           <Card.Title>
             Hi, you can call me <span id='name'> Mnevis</span>
           </Card.Title>
-          <Card.Text>I'm a Front-end web developper</Card.Text>
+          <Card.Text>I'm a Frontend web developper</Card.Text>
           <Container className='text-center'>
             <Button variant='outline-primary'>
               <LinkContainer to='/Projects'>

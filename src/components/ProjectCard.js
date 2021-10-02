@@ -12,12 +12,21 @@ const ProjectCard = (props) => {
           <Card.Img
             className={'my-3'}
             variant='top'
+            height='130px'
             src={props.src}
             alt={props.alt}
           />
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>{props.description}</Card.Text>
+            <Card.Title>
+              <Container className='text-center'>
+                {console.log(props.iconsClass)}
+                {props.iconsClass.map((item) => {
+                  return <i className={item} />
+                })}
+              </Container>
+            </Card.Title>
             <Container className='btn-toolbar '>
               <Button variant='outline-primary' disabled={props.disabled}>
                 <a href={props.linkCode}>View</a>

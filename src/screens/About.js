@@ -8,7 +8,7 @@ const About = () => {
       <Card id='aboutCard'>
         <Card.Body>
           <Card.Title>
-            How I became a <span id='name'> Front-end web developper</span> ?
+            How I became a <span id='name'> Frontend web developper</span> ?
           </Card.Title>
           <Card.Text>
             To make a long story short I became a web developper after following

@@ -55,3 +55,8 @@ span {
 .about a {
   text-decoration: none;
 }
+
+/* Projects */
+.fab {
+  padding: 5px;
+}
