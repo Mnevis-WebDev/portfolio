@@ -21,9 +21,8 @@ const ProjectCard = (props) => {
             <Card.Text>{props.description}</Card.Text>
             <Card.Title>
               <Container className='text-center'>
-                {console.log(props.iconsClass)}
-                {props.iconsClass.map((item) => {
-                  return <i className={item} />
+                {props.iconsClass.map((item, index) => {
+                  return <i className={item} key={index} />
                 })}
               </Container>
             </Card.Title>

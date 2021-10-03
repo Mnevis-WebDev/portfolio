@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <Navbar bg='light' expand='sm'>
+    <Navbar bg='light' expand='sm' className='text-center'>
       <Container>
         <LinkContainer to='/'>
           <Navbar.Brand>
@@ -37,6 +38,14 @@ const Header = () => {
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
+        <BootstrapSwitchButton
+          checked={false}
+          onlabel='FR'
+          offlabel='EN'
+          onChange={(checked: boolean) => {
+            props.returnLanguage(checked)
+          }}
+        />
       </Container>
     </Navbar>
   )

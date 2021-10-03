@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Card, Button } from 'react-bootstrap'
 
-const Resume = () => {
+const Resume = (props) => {
   return (
     <Container
       className='about my-5'
@@ -14,17 +14,29 @@ const Resume = () => {
     >
       <Card>
         <Card.Body>
-          <Card.Title>Download my resume</Card.Title>
-          <Card.Text>
-            <Container>
-              <Button variant='outline-primary'>
-                <a href='CV_Karim_Sorour_EN.PDF'>in English</a>{' '}
-              </Button>
-              <Button variant='outline-primary'>
-                <a href='CV_Karim_Sorour_FR.PDF'>in French</a>{' '}
-              </Button>
-            </Container>
-          </Card.Text>
+          {props.english ? (
+            <>
+              <Container className='text-center'>
+                <Card.Title>Télécharger mon resume</Card.Title>
+                <Card.Text>
+                  <Button variant='outline-primary'>
+                    <a href='CV_Karim_Sorour_FR.PDF'>En Français</a>{' '}
+                  </Button>
+                </Card.Text>
+              </Container>
+            </>
+          ) : (
+            <>
+              <Container className='text-center'>
+                <Card.Title>Download my resume</Card.Title>
+                <Card.Text>
+                  <Button variant='outline-primary'>
+                    <a href='CV_Karim_Sorour_EN.PDF'>in English</a>{' '}
+                  </Button>
+                </Card.Text>
+              </Container>
+            </>
+          )}
         </Card.Body>
       </Card>
     </Container>

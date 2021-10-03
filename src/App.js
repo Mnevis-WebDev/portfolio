@@ -1,7 +1,8 @@
 //import Switch from 'react-bootstrap/esm/Switch'
 import { Switch } from 'react-router'
 import Particles from 'react-particles-js'
-import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
+import { useState } from 'react'
 
 import Header from './components/Header'
 import Home from './screens/Home'
@@ -10,6 +11,11 @@ import About from './screens/About'
 import Resume from './screens/Resume'
 
 function App() {
+  const [language, setLanguage] = useState(Boolean)
+
+  function switchLanguage(setme) {
+    setLanguage(setme)
+  }
   return (
     <HashRouter>
       <div className='App'>
@@ -38,12 +44,27 @@ function App() {
             height: '100%',
           }}
         >
-          <Header />
+          <Header returnLanguage={switchLanguage} />
           <Switch>
-            <Route path='/' exact component={Home}></Route>
-            <Route path='/About' exact component={About}></Route>
-            <Route path='/Resume' exact component={Resume}></Route>
-            <Route path='/Projects' component={Projects}></Route>
+            <Route
+              path='/'
+              exact
+              component={() => <Home english={language} />}
+            ></Route>
+            <Route
+              path='/About'
+              exact
+              component={() => <About english={language} />}
+            ></Route>
+            <Route
+              path='/Resume'
+              exact
+              component={() => <Resume english={language} />}
+            ></Route>
+            <Route
+              path='/Projects'
+              component={() => <Projects english={language} />}
+            ></Route>
           </Switch>
         </div>
       </div>
