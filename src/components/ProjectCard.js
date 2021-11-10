@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <Container>
       <Card
         style={{ width: '18rem' }}
-        className='card text-white bg-dark mb-3 mx-auto'
+        className='card text-white bg-dark mx-4 m mx-auto ml-3'
       >
         <Container>
           <Card.Img

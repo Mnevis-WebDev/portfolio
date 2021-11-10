@@ -9,12 +9,14 @@ const Home = (props) => {
         <Card.Body>
           {props.english ? (
             <>
-              <Card.Title>
-                Bonjour, vous pouvez m'appeler <span id='name'> Mnevis</span>
+              <Card.Title className='text-focus-in'>
+                Bonjour, vous pouvez m'appeler <span id='name'>Karim</span>
               </Card.Title>
-              <Card.Text>Je suis un développeur web frontal</Card.Text>
-              <Container className='text-center'>
-                <Button variant='outline-primary'>
+              <Card.Text className='text-focus-in-second'>
+                Je suis un développeur web frontal
+              </Card.Text>
+              <Container className='text-center text-focus-in-second'>
+                <Button className='heartbeat' variant='outline-primary'>
                   <LinkContainer to='/Projects'>
                     <a href='/Projects'>Voici ce que je peux faire</a>
                   </LinkContainer>
@@ -23,12 +25,14 @@ const Home = (props) => {
             </>
           ) : (
             <>
-              <Card.Title>
-                Hi, you can call me <span id='name'> Mnevis</span>
+              <Card.Title className='text-focus-in'>
+                Hi, you can call me <span id='name'> Karim</span>
               </Card.Title>
-              <Card.Text>I'm a Frontend web developper</Card.Text>
-              <Container className='text-center'>
-                <Button variant='outline-primary'>
+              <Card.Text className='text-focus-in-second'>
+                I'm a Frontend web developper
+              </Card.Text>
+              <Container className='text-center text-focus-in-second'>
+                <Button className='heartbeat' variant='outline-primary'>
                   <LinkContainer to='/Projects'>
                     <a href='/Projects'>See what I can do</a>
                   </LinkContainer>

@@ -7,10 +7,10 @@ const Projects = (props) => {
     <Container>
       {props.english ? (
         <>
-          <Container className='my-3 p-3 text-center'>
+          <Container className='my-3 p-3 text-center text-focus-in'>
             <h1>Voici la liste de mes projets pour l'instant</h1>
           </Container>
-          <Container>
+          <Container className='text-focus-in-second'>
             <Row>
               <Col sm={12} md={6} lg={4} xl={3}>
                 <ProjectCard
@@ -18,12 +18,12 @@ const Projects = (props) => {
                   src={'/img/project1.png'}
                   alt={'image projet 1'}
                   description={
-                    "Projet React qui récupère les données via l'API de fortnite."
+                    "Projet React qui récupère les données via l'API du jeu Fortnite."
                   }
                   linkCode={
-                    ' https://mnevis-webdev.github.io/react-fortnite-store/'
+                    ' https://Karim-webdev.github.io/react-fortnite-store/'
                   }
-                  link={'https://github.com/Mnevis-WebDev/react-fortnite-store'}
+                  link={'https://github.com/Karim-WebDev/react-fortnite-store'}
                   iconsClass={['fab fa-react']}
                 />
               </Col>
@@ -36,9 +36,9 @@ const Projects = (props) => {
                     'Quiz pour apprendre le genre des noms en Français'
                   }
                   linkCode={
-                    'https://mnevis-webdev.github.io/LaBatailleDesGenres/'
+                    'https://Karim-webdev.github.io/LaBatailleDesGenres/'
                   }
-                  link={' https://github.com/Mnevis-WebDev/LaBatailleDesGenres'}
+                  link={' https://github.com/Karim-WebDev/LaBatailleDesGenres'}
                   iconsClass={['fab fa-js', 'fab fa-bootstrap']}
                 />
               </Col>
@@ -48,15 +48,16 @@ const Projects = (props) => {
                   src={'/img/project3.png'}
                   alt={'image projet 3'}
                   description={
-                    "Projet commercial sur React. Laboratoire de langues qui améliore les capacités de l'apprenant."
+                    "Projet commercial sur React. Laboratoire de langues qui améliore les capacités de l'apprenant. Le backend est fait avec express et la base de données avec MongoDB. Le site est hébergé sur Heroku"
                   }
-                  linkCode={''}
-                  link={''}
-                  disabled='true'
+                  linkCode={'https://ancient-springs-34922.herokuapp.com/'}
+                  link={'https://ancient-springs-34922.herokuapp.com/'}
                   iconsClass={[
+                    'fa fa-server',
                     'fab fa-react',
                     'fab fa-bootstrap',
                     'fab fa-node',
+                    'fa fa-database',
                   ]}
                 />
               </Col>
@@ -66,8 +67,8 @@ const Projects = (props) => {
                   src={'/img/project4.png'}
                   alt={'image projet 4'}
                   description={'Portfolio simple sur React'}
-                  linkCode={'mnevis.website'}
-                  link={'https://github.com/Mnevis-WebDev/portfolio'}
+                  linkCode={'Karim.website'}
+                  link={'https://github.com/Karim-WebDev/portfolio'}
                   iconsClass={['fab fa-react', 'fab fa-bootstrap']}
                 />
               </Col>
@@ -76,10 +77,10 @@ const Projects = (props) => {
         </>
       ) : (
         <>
-          <Container className='my-3 p-3 text-center'>
+          <Container className='my-3 p-3 text-center text-focus-in'>
             <h1>Here are the list of my projects</h1>
           </Container>
-          <Container>
+          <Container className='text-focus-in-second'>
             <Row>
               <Col sm={12} md={6} lg={4} xl={3}>
                 <ProjectCard
@@ -90,9 +91,9 @@ const Projects = (props) => {
                     'React project that fetch data item from the fortnite API.'
                   }
                   linkCode={
-                    ' https://mnevis-webdev.github.io/react-fortnite-store/'
+                    ' https://Karim-webdev.github.io/react-fortnite-store/'
                   }
-                  link={'https://github.com/Mnevis-WebDev/react-fortnite-store'}
+                  link={'https://github.com/Karim-WebDev/react-fortnite-store'}
                   iconsClass={['fab fa-react']}
                 />
               </Col>
@@ -105,9 +106,9 @@ const Projects = (props) => {
                     'Quiz like to learn the gender of the noun in French'
                   }
                   linkCode={
-                    'https://mnevis-webdev.github.io/LaBatailleDesGenres/'
+                    'https://Karim-webdev.github.io/LaBatailleDesGenres/'
                   }
-                  link={' https://github.com/Mnevis-WebDev/LaBatailleDesGenres'}
+                  link={' https://github.com/Karim-WebDev/LaBatailleDesGenres'}
                   iconsClass={['fab fa-js', 'fab fa-bootstrap']}
                 />
               </Col>
@@ -117,15 +118,16 @@ const Projects = (props) => {
                   src={'/img/project3.png'}
                   alt={'image project 3'}
                   description={
-                    'Commercial project on React. Language laboratory that enhance the capabilities of the learner.'
+                    'Saas created with React. Language laboratory that enhance the capabilities of the learner. The backend was done with express, the database with MongoDB and hosting on Heroku'
                   }
-                  linkCode={''}
-                  link={''}
-                  disabled='true'
+                  linkCode={'https://ancient-springs-34922.herokuapp.com/'}
+                  link={'https://ancient-springs-34922.herokuapp.com/'}
                   iconsClass={[
+                    'fa fa-server',
                     'fab fa-react',
                     'fab fa-bootstrap',
                     'fab fa-node',
+                    'fa fa-database',
                   ]}
                 />
               </Col>
@@ -135,8 +137,8 @@ const Projects = (props) => {
                   src={'/img/project4.png'}
                   alt={'image project 4'}
                   description={'Simple portfolio on react'}
-                  linkCode={'mnevis.website'}
-                  link={'https://github.com/Mnevis-WebDev/portfolio'}
+                  linkCode={'https://Karim.website'}
+                  link={'https://github.com/Karim-WebDev/portfolio'}
                   iconsClass={['fab fa-react', 'fab fa-bootstrap']}
                 />
               </Col>
