@@ -137,7 +137,7 @@ const Projects = (props) => {
                   src={'/img/project4.png'}
                   alt={'image project 4'}
                   description={'Simple portfolio on react'}
-                  linkCode={'https://Karim.website'}
+                  linkCode={'https://mnevis.website'}
                   link={'https://github.com/Karim-WebDev/portfolio'}
                   iconsClass={['fab fa-react', 'fab fa-bootstrap']}
                 />
